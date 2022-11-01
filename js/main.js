@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () =>{
                     }
                 }
                 else{
-                    history.pushState(null, null, window.location.origin);
+                    history.pushState(null, null, window.location.origin + window.location.pathname);
                 }
             })
 
