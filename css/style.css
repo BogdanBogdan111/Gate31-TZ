@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background: #a0ff93;
+}
+
+* {
+    box-sizing: border-box;
+}
+.content {
+    width: 970px;
+    margin: 0 auto;
+}
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+.post {
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #a28bf8;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+}
+.post h3 {
+    margin-top: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.post.active {
+    background: #5c5c5c;
+    border-color: #5c5c5c;
+}
+.post.active p, .post.active h3 {
+    color: #fff;
+}
+
+.filter {
+    margin: 10px;
+}
+
+#search {
+    padding: 0 10px;
+    outline: 0;
+    height: 40px;
+    flex-grow: 1;
+    border-radius: 10px;
+    border: 1px solid #a28bf8;
+}
+
+.btn {
+    cursor: pointer;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    width: 100px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: #a28bf8;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.filter form {
+    display: flex;
+}
